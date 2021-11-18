@@ -1,19 +1,18 @@
 <template>
   <div>
-    <Test></Test>
+    {{ test }}
   </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import Test from '@/components/domain/Test.vue'
 
 export default defineComponent({
-  components: {
-    Test
-  },
   setup() {
-    
+    const test = 'hello world'
+    return {
+      test
+    }
   },
 })
 </script>
